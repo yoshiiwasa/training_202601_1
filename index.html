@@ -1,12 +1,53 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+
+  <title>郵便番号検索</title>
 </head>
+
 <body>
-  
+
+  <h1>郵便番号検索</h1>
+  <form>
+    <div>
+      <input type="text" placeholder="例:123ｰ4567">
+    </div>
+    <div>
+      <button>検索</button>
+      <button>リセット</button>
+    </div>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>zip code</th>
+        <th>住所1</th>
+        <th>住所2</th>
+        <th>住所3</th>
+        <th>住所1カナ</th>
+        <th>住所2カナ</th>
+        <th>住所3カナ</th>
+        <th>pref code</th>
+      </tr>
+    </thead>
+    <tbody>
+      <td>zip code</td>
+      <td>住所1</td>
+      <td>住所2</td>
+      <td>住所3</td>
+      <td>住所1カナ</td>
+      <td>住所2カナ</td>
+      <td>住所3カナ</td>
+      <td>pref code</td>
+    </tbody>
+  </table>
+
   <script src="main.js"></script>
 </body>
+
 </html>
