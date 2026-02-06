@@ -5,23 +5,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-
   <title>郵便番号検索</title>
 </head>
 
 <body>
-
   <h1>郵便番号検索</h1>
   <form>
     <div>
-      <input type="text" placeholder="例:123ｰ4567">
+      <input type="text" id="zipcode" name="zipcode" placeholder="例:1234567">
     </div>
-    <div>
-      <button>検索</button>
-      <button>リセット</button>
-    </div>
+    <button type="button" class="search">検索</button>
+    <button type="button" class=" cancel">キャンセル</button>
   </form>
-
   <table>
     <thead>
       <tr>
@@ -35,15 +30,8 @@
         <th>pref code</th>
       </tr>
     </thead>
-    <tbody>
-      <td>zip code</td>
-      <td>住所1</td>
-      <td>住所2</td>
-      <td>住所3</td>
-      <td>住所1カナ</td>
-      <td>住所2カナ</td>
-      <td>住所3カナ</td>
-      <td>pref code</td>
+    <tbody id="result">
+   
     </tbody>
   </table>
 
