@@ -4,15 +4,6 @@
   const input = document.querySelector('#zipcode'); // 郵便番号入力欄
   let data; // APIから取得したデータ格納用
 
-  // 郵便番号入力欄でキーが押されたときの処理
-  input.addEventListener('keydown', (event) => {
-    // 押されたキーが Enter の場合
-    if (event.key === 'Enter') {
-      event.preventDefault(); // フォーム送信（リロード）を防ぐ
-      document.querySelector('button.search').click(); // 検索ボタンを押したのと同じ処理を実行
-    }
-  });
-
   /**
    * 検索ボタンクリック時の処理
    * 郵便番号から住所を取得してテーブルに表示する
